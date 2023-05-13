@@ -6,12 +6,36 @@
                 <div class="name">
                     {{ food.name }}
                 </div>
+
                 <span class="favorite {{ food.favorite?'':'not' }}">
                     🖤
                 </span>
-                <!-- <div class="price">
-                    {{ food.price }}
-                </div> -->
+                
+                <star-rating
+                    [value]="food.stars"
+                    [totalstars]="5"
+                    checkedcolor="red"
+                    uncheckedcolor="black"
+                    size="20px"
+                    [readonly]="true">
+                </star-rating>
+                
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let origin of food.origins">
+                            {{ origin }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cook-time">
+                    <span>🕒</span>
+                    {{ food.cookTime }} minutes
+                </div>
+                
+                <div class="price">
+                    {{ food.price | currency }}
+                </div>
             </div>
         </a>
     </li>
