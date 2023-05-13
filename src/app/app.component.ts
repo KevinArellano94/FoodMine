@@ -7,7 +7,7 @@ import { StarRatingComponent } from 'ng-starrating';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'FoodMine';
 
   constructor() { }
 
