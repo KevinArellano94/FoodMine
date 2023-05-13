@@ -8,17 +8,19 @@
                 </div>
 
                 <span class="favorite {{ food.favorite?'':'not' }}">
-                    🖤
+                    ❤
                 </span>
                 
-                <star-rating
-                    [value]="food.stars"
-                    [totalstars]="5"
-                    checkedcolor="red"
-                    uncheckedcolor="black"
-                    size="20px"
-                    [readonly]="true">
-                </star-rating>
+                <div class="stars">
+                    <star-rating
+                        [value]="food.stars"
+                        [totalstars]="5"
+                        checkedcolor="red"
+                        uncheckedcolor="black"
+                        size="20px"
+                        [readonly]="true">
+                    </star-rating>
+                </div>
                 
                 <div class="product-item-footer">
                     <div class="origins">
@@ -26,11 +28,11 @@
                             {{ origin }}
                         </span>
                     </div>
-                </div>
 
-                <div class="cook-time">
-                    <span>🕒</span>
-                    {{ food.cookTime }} minutes
+                    <div class="cook-time">
+                        <span>🕒</span>
+                        {{ food.cookTime }} minutes
+                    </div>
                 </div>
                 
                 <div class="price">
