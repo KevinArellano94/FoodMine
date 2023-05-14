@@ -3,6 +3,12 @@
 </div>
 
 <ul>
+    <li *ngIf="filteredFoods.length === 0">
+        <h1>No results found</h1>
+    </li>
+</ul>
+
+<ul>
     <li *ngFor="let food of filteredFoods">
         <a>
             <img src="{{ food.imageUrl }}" alt="" />

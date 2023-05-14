@@ -85,3 +85,9 @@ li a:hover
     color: #414141;
     margin-top: .7rem;
 }
+
+.collapse
+{
+    transition: height 0.3s ease-out;
+    overflow: hidden;
+}  
