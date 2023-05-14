@@ -1,5 +1,9 @@
+<div>
+    <input type="text" placeholder="Search Food Mine!" [(ngModel)]="searchTerm" (input)="filterFoods()">
+</div>
+
 <ul>
-    <li *ngFor="let food of foods">
+    <li *ngFor="let food of filteredFoods">
         <a>
             <img src="{{ food.imageUrl }}" alt="" />
             <div class="content">
