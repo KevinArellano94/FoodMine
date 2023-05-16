@@ -7,12 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RatingModule } from 'ng-starrating';
 import { FormsModule } from '@angular/forms';
+import { ProfilesComponent } from './profiles/profiles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ProfilesComponent
   ],
   imports: [
     BrowserModule,
